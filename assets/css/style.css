@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.grid-container {
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 1.5fr 8.8fr;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+
+  background-color: #f9f9f9;
+}
+.header {
+  grid-area: header;
+  background-color: coral;
+  color: whitesmoke;
+  height: 10vh;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  gap: 1rem;
+  border: solid 1px grey;
+  background-color: gold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  gap: 4em;
+  padding-top: 1rem;
+}
+
+.aside {
+  display: flex;
+  grid-area: aside;
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20vw;
+  background-color: chocolate;
+  color: whitesmoke;
+}
+
+.footer {
+  grid-area: footer;
+  color: whitesmoke;
+  background-color: coral;
+  text-align: center;
+}
+
+.aside ul li {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.aside li {
+  border-radius: 3px;
+  margin: 2em;
+}
+
+.button {
+  background-color: chocolate;
+  padding: 8px;
+  margin-top: 2%;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.header h1 {
+  margin: 0%;
+  padding: 0%;
+}
+.cards1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: aliceblue;
+}
